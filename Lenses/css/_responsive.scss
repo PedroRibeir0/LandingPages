@@ -1,0 +1,130 @@
+@media screen and (max-width:900px) {
+    #your-style{
+        img#style-3{
+            display: none;
+        }
+        .ocult{
+            display: none;
+        }
+        #infos-button-explore{
+            margin-top: 20%;
+        }  
+        
+    }
+    footer{
+        ul{
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width:660px){
+    #brand{
+        #left{
+            width: 100%;
+        }
+        #right{
+            position: absolute;
+            background: transparent;
+            left: 50%;
+
+            #call{
+                width: 75%;
+                padding: 30px 20px;
+                background-color: rgba(3, 3, 3, 0.4);
+                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.603);
+
+                #line{
+                    left: 180px;
+                    top: 35px;
+                }
+            }
+        }
+    }
+    #your-style{
+        #square-background{
+            padding: 40px 0;
+            margin: 0;
+            width: 100%;
+            #style-images{
+                justify-content: center;
+                img{
+                    width: 120px;
+                }
+                img#style-1{
+                    top: -12px;
+                }
+                img#style-2{
+                    top: 12px;
+                }
+            }
+        }
+        
+    }
+    #links{
+        margin-top: 20px;
+        #footer-line{
+            display: none;
+        }
+        ul{
+            li{
+                span.tittle{
+                    font-size: 1.1rem;
+                }
+                span.icon{
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:470px){
+    #brand{
+        #right{
+            left: 40%;
+            #call{
+                width: 100%;
+            }
+        }
+    }
+    #your-style{
+        #square-background{
+            #infos{
+                width: 70%;
+            }
+            #style-images{
+                img#style-1{
+                    display: none;
+                }
+                img#style-2{
+                    top: 5px;
+                }
+            }
+        }
+    }
+    #links{
+        ul{
+            justify-content: space-between;
+            width: 90%;
+            li{
+                span.tittle{
+                    font-size: 1rem;
+                }
+                a{
+                    font-size: 0.825rem;
+                }
+            }
+        }
+    }
+    footer{
+        p{
+            width: 80%;
+        }
+        ul{
+            width: 70%;
+        }
+    }
+}

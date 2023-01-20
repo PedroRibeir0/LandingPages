@@ -20,3 +20,14 @@ function loaded(){
 
 window.addEventListener('load',loaded)
 
+
+
+//
+
+let menu = document.querySelector('#brand #right #menu')
+if (window.matchMedia("(min-width: 660px)").matches){
+    changeMenu()
+}
+function changeMenu(){
+    console.log(menu)
+}

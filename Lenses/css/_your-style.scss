@@ -2,11 +2,12 @@ $square-style-background: #3a6c6a;
 
 #your-style{
     width: 100%;
-    height: 600px;
+    
 
     #square-background{
         padding: 30px 10px;
         width: 85%;
+        max-height: 400px;
         margin: 80px auto;
         display: flex;
         background-color: $square-style-background;
@@ -70,10 +71,12 @@ $square-style-background: #3a6c6a;
             width: 60%;
             height: 100%;
             position: relative;
+            gap: 10px;
+            justify-content: space-around;
             
             img{
                 width: 160px;
-                position: absolute;
+                position: relative;
                 border-radius: 3px;
                 box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.125);
                 transition-duration: 0.3s;
@@ -86,11 +89,11 @@ $square-style-background: #3a6c6a;
                 top: -90px;
             }
             img#style-2{
-                left: 180px;
+                top: 0;
             }
             img#style-3{
                 top: -90px;
-                left: 360px;
+                
             }
         }
     }
