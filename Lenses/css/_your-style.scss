@@ -1,0 +1,97 @@
+$square-style-background: #3a6c6a;
+
+#your-style{
+    width: 100%;
+    height: 600px;
+
+    #square-background{
+        padding: 30px 10px;
+        width: 85%;
+        margin: 80px auto;
+        display: flex;
+        background-color: $square-style-background;
+        box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.125);
+
+        #infos{
+            padding: 10px;
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+            #designed-by-you{
+                font-size: 1.4rem;
+            }
+
+            #your-style{
+                text-align: center;
+                color: $square-style-background;
+                background-color: white;
+                font-size: 1.5rem;
+                font-weight: 700;
+                padding: 0 10px;
+                width: 80%;
+                height: max-content;
+                border-radius: 2px;
+                margin: 10px auto;
+
+            }
+            p{
+                font-weight: 300;
+                margin: 20px auto;
+                width: 95%;
+            }
+
+            #infos-button-explore{
+                background-color: transparent;
+                padding: 8px 30px;
+                border-radius: 20px;
+                color: white;
+                border: 2px solid white;
+                font-weight: 500;
+                transition-duration: 0.25s;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: white;
+                    color: $square-style-background;
+                }
+
+                &:active{
+                    transform: scale(0.93);
+                }
+            }
+        }
+        #style-images{
+            display: flex;
+            width: 60%;
+            height: 100%;
+            position: relative;
+            
+            img{
+                width: 160px;
+                position: absolute;
+                border-radius: 3px;
+                box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.125);
+                transition-duration: 0.3s;
+
+                &:hover{
+                    transform: translate3d(0,10px,0);
+                }
+            }
+            img#style-1{
+                top: -90px;
+            }
+            img#style-2{
+                left: 180px;
+            }
+            img#style-3{
+                top: -90px;
+                left: 360px;
+            }
+        }
+    }
+}

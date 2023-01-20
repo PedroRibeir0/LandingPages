@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600&family=Press+Start+2P&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Staatliches&family=Zen+Dots&display=swap");
+#brand {
+  width: 100%;
+  height: 750px;
+  display: flex;
+}
+#brand #left {
+  width: 50%;
+  height: 100%;
+  color: white;
+  position: relative;
+}
+#brand #left img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition-duration: 1s;
+  opacity: 0;
+}
+#brand #left img.selected {
+  opacity: 1;
+}
+#brand #left #logo {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+#brand #left #logo:hover {
+  cursor: default;
+}
+#brand #right {
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(0deg, #616161, #1c1f1c);
+  color: white;
+}
+#brand #right #menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 80%;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+#brand #right #menu li:hover {
+  cursor: pointer;
+  text-decoration: overline;
+  color: rgb(197, 197, 197);
+  transition-duration: 0.1s;
+}
+#brand #right #menu li:active {
+  transform: scale(0.97);
+}
+#brand #right #call {
+  margin: 150px auto;
+  width: 65%;
+  position: relative;
+}
+#brand #right #call #lenses {
+  font-size: 3rem;
+  font-weight: 100;
+}
+#brand #right #call #b-future {
+  font-weight: 700;
+}
+#brand #right #call #line {
+  height: 80px;
+  width: 6px;
+  background-color: white;
+  position: absolute;
+  left: 165px;
+  top: 3px;
+}
+#brand #right #call p {
+  margin: 30px auto;
+  font-weight: 300;
+}
+#brand #right #call #brand-button-explore {
+  background-color: transparent;
+  padding: 8px 25px;
+  color: white;
+  border: 2px solid white;
+  transition-duration: 0.2s;
+}
+#brand #right #call #brand-button-explore:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.13);
+}
+#brand #right #call #brand-button-explore:active {
+  transform: scale(0.93);
+}
+
+#your-style {
+  width: 100%;
+  height: 600px;
+}
+#your-style #square-background {
+  padding: 30px 10px;
+  width: 85%;
+  margin: 80px auto;
+  display: flex;
+  background-color: #3a6c6a;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.125);
+}
+#your-style #square-background #infos {
+  padding: 10px;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#your-style #square-background #infos #designed-by-you {
+  font-size: 1.4rem;
+}
+#your-style #square-background #infos #your-style {
+  text-align: center;
+  color: #3a6c6a;
+  background-color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 10px;
+  width: 80%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 2px;
+  margin: 10px auto;
+}
+#your-style #square-background #infos p {
+  font-weight: 300;
+  margin: 20px auto;
+  width: 95%;
+}
+#your-style #square-background #infos #infos-button-explore {
+  background-color: transparent;
+  padding: 8px 30px;
+  border-radius: 20px;
+  color: white;
+  border: 2px solid white;
+  font-weight: 500;
+  transition-duration: 0.25s;
+}
+#your-style #square-background #infos #infos-button-explore:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #3a6c6a;
+}
+#your-style #square-background #infos #infos-button-explore:active {
+  transform: scale(0.93);
+}
+#your-style #square-background #style-images {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+#your-style #square-background #style-images img {
+  width: 160px;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.125);
+  transition-duration: 0.3s;
+}
+#your-style #square-background #style-images img:hover {
+  transform: translate3d(0, 10px, 0);
+}
+#your-style #square-background #style-images img#style-1 {
+  top: -90px;
+}
+#your-style #square-background #style-images img#style-2 {
+  left: 180px;
+}
+#your-style #square-background #style-images img#style-3 {
+  top: -90px;
+  left: 360px;
+}
+
+#links {
+  width: 100%;
+  margin-top: -30px;
+  padding-bottom: 60px;
+}
+#links #footer-line {
+  background-color: black;
+  width: 80%;
+  height: 1px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#links ul {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#links ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#links ul li span.tittle {
+  font-size: 1.2rem;
+}
+#links ul li span.icon {
+  margin: 10px 0;
+  background-color: #525252;
+  color: white;
+  height: 90px;
+  width: 90px;
+  line-height: 90px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+}
+#links ul li a {
+  color: rgb(75, 75, 75);
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+#links ul li a:hover {
+  transform: scale(1.05);
+  color: gray;
+}
+
+footer {
+  width: 100%;
+  background-color: #1d1d1d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+footer #footer-brand {
+  font-size: 1.4rem;
+}
+footer p {
+  font-weight: 100;
+  color: lightgrey;
+  width: 60%;
+  text-align: center;
+  margin: 20px 0;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 15%;
+  font-size: 1.1rem;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+footer #copy {
+  justify-self: flex-end;
+  background-color: black;
+  width: 100%;
+  margin-top: 50px;
+  padding: 5px 0;
+  text-align: center;
+}
+footer #copy a {
+  color: rgb(145, 145, 145);
+  font-size: 1.05;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  background-color: #6f7474;
+}
+
+#content {
+  background-color: white;
+  margin: 0 auto;
+  width: 100vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-width: 1000px;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.125);
+}/*# sourceMappingURL=main.css.map */

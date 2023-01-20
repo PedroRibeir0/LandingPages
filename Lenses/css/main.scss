@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import 'brand', 'your-style', 'links', 'footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600&family=Press+Start+2P&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Staatliches&family=Zen+Dots&display=swap');
+
+$square-style-background: #3a6c6a;
+$brand-background-color1: #525252;
+$brand-background-color2: darken($brand-background-color1, 3);
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-color: #6f7474;
+}
+
+#content{
+    background-color: white;
+    margin: 0 auto;
+    width: 100vw;
+    height: max-content;
+    max-width: 1000px;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.125);
+}
