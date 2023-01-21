@@ -303,6 +303,17 @@ footer #copy a {
     background: transparent;
     left: 50%;
   }
+  #brand #right #menu {
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: flex-end;
+  }
+  #brand #right #menu li {
+    margin: 3px 0;
+  }
+  #brand #right #menu li:hover {
+    color: rgba(0, 0, 0, 0.514);
+  }
   #brand #right #call {
     width: 75%;
     padding: 30px 20px;
