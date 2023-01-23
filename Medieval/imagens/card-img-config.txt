@@ -1,0 +1,4 @@
+brilho: 0
+saturacao: 0.2
+mode: exclusao
+depis luz forte
