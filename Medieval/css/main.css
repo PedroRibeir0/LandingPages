@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+header {
+  display: flex;
+  height: 564px;
+}
+header #banner img {
+  opacity: 0;
+  position: absolute;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.6s;
+  z-index: 1;
+}
+header #banner .selected {
+  opacity: 1;
+}
+header #menu {
+  justify-self: flex-end;
+  padding: 10px;
+  z-index: 1;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+header #menu li {
+  list-style: none;
+  transition: all 0.2s;
+}
+header #menu li:hover {
+  text-decoration: overline;
+  color: green;
+  cursor: pointer;
+}
+header #menu li:active {
+  transform: scale(0.98);
+}
+header #call {
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+header #call h1 {
+  font-size: 4rem;
+  font-family: "Aboreto", cursive;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.534);
+  margin-bottom: 10px;
+}
+header #call img#paper {
+  width: 230px;
+  filter: drop-shadow(0px 3px 12px rgba(0, 70, 0, 0.842));
+}
+header #call #rpg {
+  position: relative;
+  left: 0;
+  bottom: 62px;
+  font-weight: bold;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  color: rgba(39, 85, 40, 0.7529411765);
+  font-family: "Signika Negative", sans-serif;
+  font-size: 1.7rem;
+}
+header #call p {
+  width: 75%;
+  font-size: 1.3rem;
+  font-family: "Source Sans Pro", sans-serif;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.534);
+}
+header #call #buttons {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+header #call #buttons button {
+  font-family: "Aboreto", cursive;
+  color: white;
+  border: none;
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+header #call #buttons button:active {
+  transform: scale(0.95);
+}
+header #call #buttons #play {
+  background-color: rgba(39, 85, 40, 0.937254902);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.125);
+}
+header #call #buttons #trailer {
+  background-color: transparent;
+}
+
+main {
+  position: relative;
+  height: 1499px;
+}
+main img {
+  position: absolute;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.9));
+}
+main #arrows {
+  transform: rotate(8deg);
+  left: 33px;
+  top: -2px;
+  z-index: 1;
+}
+main #candle-plate {
+  left: 185px;
+  top: 100px;
+}
+main #book {
+  right: 1px;
+  top: 2px;
+  filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.9));
+}
+main #table-map {
+  width: 880px;
+  top: 650px;
+  left: 80px;
+  transform: rotate(-9deg);
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+}
+main #book-written {
+  position: absolute;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  left: 400px;
+  top: 50px;
+}
+main #book-written h2 {
+  font-family: "Signika Negative", sans-serif;
+  color: rgb(70, 70, 70);
+  font-weight: 400;
+  position: absolute;
+  top: -15px;
+  left: 15px;
+}
+main #book-written #stars {
+  margin-top: 38px;
+  margin-right: 10px;
+  gap: 65px;
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(39, 85, 40, 0.937254902);
+}
+main #book-written #written {
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(70, 70, 70);
+  width: 220px;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main #main-map {
+  transform: scale(0.4) rotate(90deg);
+  top: -90px;
+  left: 375px;
+  opacity: 0.7;
+  transition: all 0.3s;
+  filter: none;
+}
+main #main-map:hover {
+  transform: scale(0.39) rotate(90deg);
+}
+main .cards {
+  border-radius: 3px;
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.5));
+  transition: all 0.9s;
+}
+main #card1 {
+  left: 135px;
+  top: 310px;
+  transform: rotate(4deg);
+}
+main #card2 {
+  left: 45px;
+  top: 520px;
+  transform: rotate(-3deg);
+}
+main #card3 {
+  left: 225px;
+  top: 530px;
+  transform: rotate(2deg);
+}
+main #card4 {
+  left: 450px;
+  top: 530px;
+  transform: rotate(4deg);
+}
+main #card5 {
+  left: 620px;
+  top: 620px;
+  transform: rotate(-6deg);
+}
+main #card6 {
+  left: 780px;
+  top: 720px;
+  transform: rotate(15deg);
+}
+main #card1:hover {
+  cursor: pointer;
+  z-index: 3;
+  filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.8));
+}
+main #card1:active {
+  transform: rotateY(180deg);
+}
+main #card2:hover {
+  cursor: pointer;
+  z-index: 3;
+  filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.8));
+}
+main #card2:active {
+  transform: rotateY(180deg);
+}
+main #card3:hover {
+  cursor: pointer;
+  z-index: 3;
+  filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.8));
+}
+main #card3:active {
+  transform: rotateY(180deg);
+}
+main #card4:hover {
+  cursor: pointer;
+  z-index: 3;
+  filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.8));
+}
+main #card4:active {
+  transform: rotateY(180deg);
+}
+main #card5:hover {
+  cursor: pointer;
+  z-index: 3;
+  filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.8));
+}
+main #card5:active {
+  transform: rotateY(180deg);
+}
+main #card6:hover {
+  cursor: pointer;
+  z-index: 3;
+  filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.8));
+}
+main #card6:active {
+  transform: rotateY(180deg);
+}
+main #coins1 {
+  right: 1px;
+  top: 490px;
+  transform: rotate(19deg);
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+}
+main #candle {
+  top: 770px;
+  left: 80px;
+  fill: none;
+}
+main #perchment {
+  top: 800px;
+  transform: rotate(90deg);
+  left: 60px;
+  filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.9));
+}
+main #feather-ink {
+  width: 430px;
+  top: 800px;
+  left: 150px;
+  transform: rotate(-32deg);
+  filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.9));
+}
+main #axe {
+  top: 990px;
+  right: 75px;
+  transform: rotate();
+}
+main #sword {
+  top: 1020px;
+  right: -12px;
+}
+main #compass {
+  top: 1200px;
+  right: 90px;
+  filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.9));
+  transition: all 2s;
+  cursor: pointer;
+}
+main #compass:active {
+  transform: rotate(-720deg);
+}
+main #coins2 {
+  top: 1300px;
+  left: 110px;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+@-webkit-keyframes map-turn {
+  95% {
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+  }
+  100% {
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@keyframes map-turn {
+  95% {
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+  }
+  100% {
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+}
+#map-info {
+  display: none;
+  height: 666px;
+  width: 900px;
+  z-index: 1;
+  background-color: transparent;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+#map-info #close {
+  position: absolute;
+  font-size: 1.8rem;
+  right: 7px;
+  top: 5px;
+  transition: all 0.2s;
+}
+#map-info #close:hover {
+  cursor: pointer;
+  color: rgb(182, 6, 6);
+}
+#map-info .info-points {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+#map-info .info-points .icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  -webkit-animation: info 1s infinite;
+          animation: info 1s infinite;
+}
+#map-info .info-points .line {
+  width: 4px;
+  height: 30px;
+  background-color: black;
+  border-radius: 3px;
+}
+#map-info .info-points .local-info {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 200px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 15px;
+  display: none;
+  z-index: 2;
+}
+#map-info .info-points .local-info h3 {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+}
+#map-info .info-points .local-info p {
+  width: 80%;
+  margin: 10px auto;
+  font-size: 0.85rem;
+}
+#map-info #point1 i:hover ~ .local-info {
+  display: block;
+}
+#map-info #point2 i:hover ~ .local-info {
+  display: block;
+}
+#map-info #point3 i:hover ~ .local-info {
+  display: block;
+}
+#map-info #point4 i:hover ~ .local-info {
+  display: block;
+}
+#map-info #point5 i:hover ~ .local-info {
+  display: block;
+}
+#map-info #point6 i:hover ~ .local-info {
+  display: block;
+}
+#map-info #point7 i:hover ~ .local-info {
+  display: block;
+}
+#map-info #point8 i:hover ~ .local-info {
+  display: block;
+}
+#map-info #point1 {
+  left: 190px;
+  top: 50px;
+}
+#map-info #point2 {
+  right: 200px;
+  top: 70px;
+}
+#map-info #point3 {
+  left: 170px;
+  top: 170px;
+}
+#map-info #point4 {
+  left: 220px;
+  top: 290px;
+}
+#map-info #point5 {
+  left: 390px;
+  top: 320px;
+}
+#map-info #point6 {
+  left: 610px;
+  top: 380px;
+}
+#map-info #point7 {
+  left: 110px;
+  top: 360px;
+}
+#map-info #point8 {
+  left: 620px;
+  top: 550px;
+}
+
+@-webkit-keyframes info {
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes info {
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes map-info {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes map-info {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+footer {
+  width: 100%;
+  background-color: #1d1d1d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+footer #footer-brand {
+  font-size: 1.4rem;
+}
+footer p {
+  font-weight: 100;
+  color: lightgrey;
+  width: 60%;
+  text-align: center;
+  margin: 20px 0;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 15%;
+  font-size: 1.1rem;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+footer #copy {
+  justify-self: flex-end;
+  background-color: black;
+  width: 100%;
+  margin-top: 50px;
+  padding: 5px 0;
+  text-align: center;
+}
+footer #copy a {
+  color: rgb(145, 145, 145);
+  font-size: 1.05;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: black;
+  max-width: 1000px;
+}/*# sourceMappingURL=main.css.map */

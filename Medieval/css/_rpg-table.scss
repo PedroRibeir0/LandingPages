@@ -1,0 +1,199 @@
+main{
+    position: relative;
+    height: 1499px;
+    img{
+        position: absolute;
+        filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.9));
+    }
+    #arrows{
+        transform: rotate(8deg);
+        left: 33px;
+        top: -2px;
+        z-index: 1;
+    }
+    #candle-plate{
+        left: 185px;
+        top: 100px;
+    }
+    #book{
+        right: 1px;
+        top: 2px;
+        filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.9));
+    }
+    #table-map{
+        width: 880px;
+        top: 650px;
+        left: 80px;
+        transform: rotate(-9deg);
+        filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+    }
+    #book-written{
+        position: absolute;
+        height: 400px;
+        width: 300px;
+        display: flex;
+        left: 400px;
+        top: 50px;
+        h2{
+            font-family: 'Signika Negative', sans-serif;
+            color: rgb(70, 70, 70);
+            font-weight: 400;
+            
+            position: absolute;
+            top: -15px;
+            left: 15px;
+        }
+        #stars{
+            margin-top: 38px;
+            margin-right: 10px;
+            gap: 65px;
+            font-size: 1.7rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            color: #275528ef;
+        }
+        #written{
+            font-family: 'Source Sans Pro', sans-serif;
+            color: rgb(70, 70, 70);
+            width: 220px;
+            margin-top: 20px;
+            font-size: 0.85rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    #main-map{
+        transform: scale(0.4) rotate(90deg);
+        top: -90px;
+        left: 375px;
+        opacity: 0.7;
+        transition: all 0.3s;
+        filter: none;
+
+        &:hover{
+            transform: scale(0.39) rotate(90deg);
+        }
+    }
+    .cards{
+        border-radius: 3px;
+        filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.5));
+        transition: all 0.9s;
+    }
+    #card1{
+        left: 135px;
+        top: 310px;
+        transform: rotate(4deg);
+    }
+    #card2{
+        left: 45px;
+        top: 520px;
+        transform: rotate(-3deg);
+    }
+    #card3{
+        left: 225px;
+        top: 530px;
+        transform: rotate(2deg);
+    }
+    #card4{
+        left: 450px;
+        top: 530px;
+        transform: rotate(4deg);
+    }
+    #card5{
+        left: 620px;
+        top: 620px;
+        transform: rotate(-6deg);
+    }
+    #card6{
+        left: 780px;
+        top: 720px;
+        transform: rotate(15deg);
+    }
+
+    @for $c from 1 to 7{
+        #card#{$c}{
+            &:hover{
+                cursor: pointer;
+                z-index: 3;
+                filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.8));
+            }
+            &:active{
+                transform: rotateY(180deg);
+            }
+        }
+    }
+
+
+    #coins1{
+        right: 1px;
+        top: 490px;
+        transform: rotate(19deg);
+        filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+    }
+    #candle{
+        top: 770px;
+        left: 80px;
+        fill: none;
+    }
+    #perchment{
+        top: 800px;
+        transform: rotate(90deg);
+        left: 60px;
+        filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.9));
+    }
+    #feather-ink{
+        width: 430px;
+        top: 800px;
+        left: 150px;
+        transform: rotate(-32deg);
+        filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.9));
+    }
+    #axe{
+        top: 990px;
+        right: 75px;
+        transform: rotate();
+    }
+    #sword{
+        top: 1020px;
+        right: -12px;
+    }
+    #compass{
+        top: 1200px;
+        right: 90px;
+        filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.9));
+        transition: all 2s;
+        cursor: pointer;
+
+        &:active{
+            transform: rotate(-720deg);
+        }
+    }
+    #coins2{
+        top: 1300px;
+        left: 110px;
+        filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+    }
+
+}
+
+@keyframes map-turn{
+    95%{
+        z-index: 1;
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
+    }
+    100%{
+        position: fixed;
+        z-index: 1;
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+}
