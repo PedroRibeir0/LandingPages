@@ -1,0 +1,101 @@
+body{
+    background-image: url('../../assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+    i{
+        position: absolute;
+        cursor: pointer;
+    }
+    #logo{
+        left: 24px;
+        top: 24px;
+        cursor: default;
+    }
+    #hamburger{
+        right: 24px;
+        top: 33px;
+        &:active{
+            transform: scale(0.95);
+        }
+    }
+    nav#home-menu{
+        display: none;
+        background-color: rgba(24, 31, 43, 0.664);
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        right: 0;
+        z-index: 2;
+
+        #close{
+            position: absolute;
+            right: 24px;
+            top: 33px;
+        }
+
+        ul{
+            margin-top: 100px;
+            margin-left: 20px;
+            list-style: none;
+            line-height: 60px;
+            li{
+                a{
+                    text-decoration: none;
+                    .menu-nums{
+                        color: #FFFFFF;
+                        font-weight: bold;
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    section#home-call{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 50%;
+        margin-top: 120px;
+    }
+    button#explore, #b-hover{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: white;
+        border: none;
+        margin-bottom: 30px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    #explore:hover ~ #b-hover{
+        transform: scale(1.4);
+        
+    }
+    #b-hover{
+        background-color: rgba(16, 18, 20, 0.4);
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        transition: all linear 0.2s;
+    }
+}
+
+@keyframes menuJump{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transition: none;
+    }
+}
