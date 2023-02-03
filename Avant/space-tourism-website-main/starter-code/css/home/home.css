@@ -1,0 +1,114 @@
+body {
+  background-image: url("../../assets/home/background-home-mobile.jpg");
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body i {
+  position: absolute;
+}
+body #logo {
+  left: 24px;
+  top: 24px;
+}
+body #hamburger {
+  right: 24px;
+  top: 33px;
+  cursor: pointer;
+}
+body #hamburger:active {
+  transform: scale(0.98);
+}
+body nav#home-menu {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: 60%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+body nav#home-menu #close {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+body nav#home-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 40%;
+}
+body nav#home-menu ul li {
+  line-height: 60px;
+}
+body nav#home-menu ul li a {
+  display: flex;
+  text-decoration: none;
+}
+body nav#home-menu ul li a .menu-nums {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+body section#home-call {
+  margin-top: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+}
+body #explore, body #b-hover {
+  width: 150px;
+  height: 150px;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  z-index: 1;
+  box-shadow: 0 0px 10px rgba(34, 44, 73, 0.5);
+  transition: all 0.1s;
+}
+body #explore:hover, body #b-hover:hover {
+  cursor: pointer;
+}
+body #explore:active, body #b-hover:active {
+  transform: scale(0.98);
+}
+body #explore:hover ~ #b-hover, body #b-hover:hover ~ #b-hover {
+  transform: scale(1.4);
+  -webkit-animation: border-hover 2s 0.3s infinite linear;
+          animation: border-hover 2s 0.3s infinite linear;
+}
+body #b-hover {
+  background-color: rgba(53, 60, 83, 0.589);
+  position: absolute;
+  z-index: 0;
+  bottom: 0px;
+  transition: all 0.3s linear;
+  box-shadow: none;
+}
+
+@-webkit-keyframes border-hover {
+  50% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+
+@keyframes border-hover {
+  50% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}/*# sourceMappingURL=home.css.map */
