@@ -1,5 +1,169 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+i {
+  position: absolute;
+  cursor: pointer;
+}
+
+#logo {
+  left: 24px;
+  top: 24px;
+  cursor: default;
+}
+@media screen and (min-width: 900px) {
+  #logo {
+    left: 40px;
+    top: 53px;
+    transform: scale(1.2);
+  }
+}
+
+#hamburger {
+  right: 24px;
+  top: 33px;
+}
+#hamburger:active {
+  transform: scale(0.95);
+}
+@media screen and (min-width: 500px) {
+  #hamburger {
+    display: none;
+  }
+}
+
+#menu-line {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  #menu-line {
+    display: block;
+    background-color: #494B53;
+    opacity: 0.8;
+    width: 31%;
+    height: 2px;
+    position: absolute;
+    top: 75px;
+    left: 10%;
+    z-index: 10;
+  }
+}
+
+nav#home-menu {
+  display: none;
+  background-color: rgba(24, 31, 43, 0.664);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  max-height: 800px;
+  right: 0;
+  z-index: 2;
+}
+@media screen and (min-width: 500px) {
+  nav#home-menu {
+    width: 67%;
+    height: 80px;
+    display: flex;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  nav#home-menu a.current h5 {
+    text-decoration: underline;
+    text-underline-offset: 33px;
+    text-decoration-thickness: 3px;
+  }
+}
+@media screen and (min-width: 900px) {
+  nav#home-menu {
+    width: 60%;
+    background-color: rgba(24, 31, 43, 0.4);
+    box-shadow: 0px 0 5px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    right: 0;
+    top: 30px;
+  }
+}
+nav#home-menu #close {
+  position: absolute;
+  right: 24px;
+  top: 33px;
+}
+@media screen and (min-width: 500px) {
+  nav#home-menu #close {
+    display: none;
+  }
+}
+nav#home-menu ul {
+  margin-top: 100px;
+  margin-left: 20px;
+  list-style: none;
+  line-height: 60px;
+}
+@media screen and (min-width: 500px) {
+  nav#home-menu ul {
+    display: flex;
+    background-color: #242730;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  nav#home-menu ul {
+    background-color: transparent;
+  }
+}
+nav#home-menu ul li a {
+  text-decoration: none;
+}
+@media screen and (min-width: 500px) {
+  nav#home-menu ul li a h5 {
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+}
+nav#home-menu ul li a .menu-nums {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+@media screen and (min-width: 500px) {
+  nav#home-menu ul li a .menu-nums {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  nav#home-menu ul li a .menu-nums {
+    display: inline;
+  }
+}
+nav#home-menu ul li a:hover h5 {
+  color: #D0D6F9;
+}
+
+@-webkit-keyframes menuJump {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transition: none;
+  }
+}
+
+@keyframes menuJump {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transition: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +201,7 @@
   font-size: 100px;
   text-transform: uppercase;
   font-weight: 100;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 @media screen and (min-width: 500px) {
   * h1 {
@@ -46,10 +211,26 @@
 * h2 {
   color: #FFFFFF;
   font-family: "Bellefair", serif;
+  font-size: 60px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 500px) {
+  * h2 {
+    font-size: 68px;
+  }
+}
+@media screen and (min-width: 900px) {
+  * h2 {
+    font-size: 85px;
+  }
 }
 * h3 {
   color: #FFFFFF;
   font-family: "Bellefair", serif;
+  font-size: 29px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 * h4 {
   color: #FFFFFF;
@@ -60,11 +241,12 @@
   font-family: "Barlow Condensed", sans-serif;
 }
 * span {
-  color: #20232D;
+  color: #4E5057;
   font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
 }
 * button {
-  color: #20232D;
+  color: #4E5057;
   background-color: #FFFFFF;
   font-family: "Bellefair", serif;
   font-size: 23px;

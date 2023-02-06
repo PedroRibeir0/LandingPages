@@ -1,0 +1,55 @@
+// fonts
+$main-font: 'Bellefair', serif;
+$secondary-font: 'Barlow Condensed', sans-serif;
+//colors
+$font-color1: #FFFFFF;
+$font-color2: #D0D6F9;
+$font-color3: #4E5057;
+
+body{
+    background-size: cover;
+    background-image: url('../../assets/crew/background-crew-mobile.jpg');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    @media screen {
+        @media(min-width: 500px){
+            background-image: url('../../assets/crew/background-crew-tablet.jpg');
+        }
+        @media (min-width: 900px){
+            background-image: url('../../assets/crew/background-crew-desktop.jpg');
+        }
+    }
+}
+
+h5.meet-crew{
+    color: white;
+    span{
+        margin-right: 10px;
+    }
+}
+img.crew-img{
+    width: 60%;
+    margin: 50px auto;
+    border-bottom: 1px solid #4E5057
+}
+
+.crew-menu{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-bottom: 50px;
+    a div{
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: gray;
+    }
+}
+.crew-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

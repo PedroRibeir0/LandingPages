@@ -3,36 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="../css/main/main.css">
+  <link rel="stylesheet" href="../css/destination/destination.css">
+  <script defer src="../js/main.js"></script>
+  <title>Space | Europa</title>
 </head>
 <body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <i id="logo"><img src="../assets/shared/logo.svg" alt=""></i>
+  <i id="hamburger"><img src="../assets/shared/icon-hamburger.svg" alt=""></i>
+  <div id="menu-line"></div>
+  <nav id="home-menu">
+    <i id="close"><img src="../assets/shared/icon-close.svg" alt=""></i>
+    <ul>
+      <li><a href="../index.html"><h5><span class="menu-nums">00</span> Home</h5></a></li>
+      <li><a class="current" href="destination-moon.html"><h5><span class="menu-nums">01</span> Destination</h5></a></li>
+      <li><a href="crew-commander.html"><h5><span class="menu-nums">02</span> Crew</h5></a></li>
+      <li><a href="technology-vehicle.html"><h5><span class="menu-nums">03</span> Technology</h5></a></li>
+    </ul>
+  </nav>
 
-  01 Pick your destination
+  <section class="sect1">
+    <h5 class="pick-destination"><span>01</span> Pick your destination</h5>
+    <img src="../assets/destination/image-europa.png" alt="moon" class="dest-img">
+  </section>
 
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Europa
-
-  The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
-  winter lover’s dream. With an icy surface, it’s perfect for a bit of 
-  ice skating, curling, hockey, or simple relaxation in your snug 
-  wintery cabin.
-
-  Avg. distance
-  628 mil. km
-
-  Est. travel time
-  3 years
+  <section class="sect2">
+    <ul id="destination-list">
+      <li><a href="destination-moon.html">Moon</a></li>
+      <li><a href="destination-mars.html">Mars</a></li>
+      <li class="selected"><a href="destination-europa.html">Europa</a></li>
+      <li><a href="destination-titan.html">Titan</a></li>
+    </ul>
+    <h2>Europa</h2>
+    <p>
+      The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+      winter lover’s dream. With an icy surface, it’s perfect for a bit of
+      ice skating, curling, hockey, or simple relaxation in your snug
+      wintery cabin.
+    </p>
+    <section class="dest-info">
+      <div class="info">
+        <h5>Avg. distance</h5>
+        <h3>628 mil. km</h3>
+      </div>
+      <div class="info">
+        <h5>Est. travel time</h5>
+        <h3>3 years</h3>
+      </div>
+    </section>
+  </section>
 </body>
 </html>

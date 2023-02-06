@@ -12,5 +12,3 @@ closeButton.addEventListener('click', ()=>{
     homeMenu.style.display = 'none'
 })
 
-
-

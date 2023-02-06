@@ -1,14 +1,26 @@
+// fonts
+$main-font: 'Bellefair', serif;
+$secondary-font: 'Barlow Condensed', sans-serif;
+//colors
+$font-color1: #FFFFFF;
+$font-color2: #D0D6F9;
+$font-color3: #4E5057;
+
+a#explore-link{
+    margin-bottom: 10%;
+}
 button#explore{
     width: 150px;
     height: 150px;
     border: none;
     border-radius: 50%;
     background-color: white;
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.8);
     cursor: pointer;
     position: relative;
     z-index: 1;
     transition: all 0.3s;
-    margin-bottom: 10%;
+
     &:active{
         transform: scale(0.95);
     }
@@ -20,7 +32,7 @@ button#explore{
         }
         @media (min-width: 900px){
             margin-bottom: 0;
-            margin-top: 200px;
+            margin-top: 320px;
         }
     }
 }
