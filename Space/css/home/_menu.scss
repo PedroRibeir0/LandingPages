@@ -1,0 +1,88 @@
+nav#home-menu{
+        display: none;
+        background-color: rgba(24, 31, 43, 0.664);
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        right: 0;
+        z-index: 2;
+        @media screen {
+            @media (min-width:500px){
+                width: 67%;
+                height: 80px;
+                display: flex;
+                backdrop-filter: none;
+                box-shadow: none;
+                background-color: transparent;
+            }
+            @media (min-width: 900px){
+                width: 60%;
+                background-color: rgba(24, 31, 43, 0.4);
+                box-shadow: 0px 0 5px rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(10px);
+                right: 0;
+                top: 30px;
+
+            }
+        }
+
+        #close{
+            position: absolute;
+            right: 24px;
+            top: 33px;
+            @media screen {
+                @media (min-width:500px) {
+                    display: none;
+                }
+            }
+        }
+
+        ul{
+            margin-top: 100px;
+            margin-left: 20px;
+            list-style: none;
+            line-height: 60px;
+            @media screen {
+                @media (min-width: 500px){
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $font-color3;
+                }
+                @media (min-width: 900px){
+                    background-color: transparent;
+                }
+            }
+
+            li{
+                a{
+                    h5{
+                        @media screen {
+                            @media (min-width: 500px){
+                                font-size: 16px;
+                                color: $font-color1;
+                            }
+                        }
+                    }
+                    text-decoration: none;
+                    .menu-nums{
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        @media screen {
+                            @media (min-width: 500px){
+                                display: none;
+                            }
+                        }
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
