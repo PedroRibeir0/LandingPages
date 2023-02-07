@@ -11,6 +11,10 @@ $font-color2: #D0D6F9;
 $font-color3: #4E5057;
 //sccs imports
 
+body{
+    background-color: #0B0E17;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -80,10 +84,23 @@ $font-color3: #4E5057;
         font-size: 29px;
         font-weight: normal;
         text-transform: uppercase;
+        @media screen {
+            @media(min-width: 500px){
+                font-size: 35px;
+            }
+        }
     }
     h4{
-        color: $font-color1;
+        color: $font-color3;
         font-family: $main-font;
+        font-weight: 100;
+        font-size: 22px;
+        text-transform: uppercase;
+        @media screen {
+            @media(min-width: 500px){
+                font-size: 27px;
+            }
+        }
     }
     a{
         color: $font-color1;

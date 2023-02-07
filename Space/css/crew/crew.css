@@ -1,34 +1,73 @@
-body {
+#content {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
   background-size: cover;
+  border: 1px solid white;
+  border-color: transparent rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   background-image: url("../../assets/crew/background-crew-mobile.jpg");
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
 }
 @media screen and (min-width: 500px) {
-  body {
+  #content {
     background-image: url("../../assets/crew/background-crew-tablet.jpg");
+    height: 100vh;
   }
 }
 @media screen and (min-width: 900px) {
-  body {
+  #content {
     background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    flex-direction: row-reverse;
+    justify-content: flex-start;
   }
 }
 
 h5.meet-crew {
   color: white;
+  margin-top: 108px;
 }
 h5.meet-crew span {
   margin-right: 10px;
 }
+@media screen and (min-width: 500px) {
+  h5.meet-crew {
+    margin-top: 135px;
+    align-self: flex-start;
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 900px) {
+  h5.meet-crew {
+    position: absolute;
+    margin-left: 0;
+    left: 7%;
+    top: 8%;
+  }
+}
 
 img.crew-img {
-  width: 60%;
+  height: 300px;
   margin: 50px auto;
   border-bottom: 1px solid #4E5057;
+}
+@media screen and (min-width: 500px) {
+  img.crew-img {
+    height: 450px;
+  }
+}
+@media screen and (min-width: 900px) {
+  img.crew-img {
+    position: absolute;
+    height: 65%;
+    bottom: 0;
+    right: 10%;
+    margin: 0;
+    border: none;
+  }
 }
 
 .crew-menu {
@@ -37,15 +76,60 @@ img.crew-img {
   width: 50%;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 500px) {
+  .crew-menu {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .crew-menu {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    bottom: -100%;
+  }
+}
 .crew-menu a div {
-  width: 13px;
-  height: 13px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: #4E5057;
+}
+@media screen and (min-width: 500px) {
+  .crew-menu a div {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .crew-menu a div {
+    width: 15px;
+    height: 15px;
+  }
+}
+.crew-menu a div:hover {
+  background-color: #D0D6F9;
+}
+.crew-menu .selected div {
+  background-color: #FFFFFF;
 }
 
 .crew-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 80px;
+  gap: 10px;
+}
+@media screen and (min-width: 900px) {
+  .crew-info {
+    width: 35%;
+    align-items: start;
+    position: absolute;
+    margin-top: 7%;
+    left: 7%;
+  }
+}
+.crew-info p {
+  margin-top: 20px;
 }/*# sourceMappingURL=crew.css.map */

@@ -164,6 +164,10 @@ nav#home-menu ul li a:hover h5 {
     transition: none;
   }
 }
+body {
+  background-color: #0B0E17;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -232,9 +236,22 @@ nav#home-menu ul li a:hover h5 {
   font-weight: normal;
   text-transform: uppercase;
 }
+@media screen and (min-width: 500px) {
+  * h3 {
+    font-size: 35px;
+  }
+}
 * h4 {
-  color: #FFFFFF;
+  color: #4E5057;
   font-family: "Bellefair", serif;
+  font-weight: 100;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 500px) {
+  * h4 {
+    font-size: 27px;
+  }
 }
 * a {
   color: #FFFFFF;

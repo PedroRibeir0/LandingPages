@@ -6,34 +6,72 @@ $font-color1: #FFFFFF;
 $font-color2: #D0D6F9;
 $font-color3: #4E5057;
 
-body{
+#content{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
     background-size: cover;
+    border: 1px solid white;
+    border-color: transparent rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     background-image: url('../../assets/crew/background-crew-mobile.jpg');
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    
     @media screen {
         @media(min-width: 500px){
             background-image: url('../../assets/crew/background-crew-tablet.jpg');
+            height: 100vh;
         }
         @media (min-width: 900px){
             background-image: url('../../assets/crew/background-crew-desktop.jpg');
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+
         }
     }
 }
 
 h5.meet-crew{
     color: white;
+    margin-top: 108px;
     span{
         margin-right: 10px;
     }
+    @media screen {
+        @media(min-width: 500px){
+            margin-top: 135px;
+            align-self: flex-start;
+            margin-left: 30px;
+        }
+        @media(min-width: 900px){
+            position: absolute;
+            margin-left: 0;
+            left: 7%;
+            top: 8%;
+        } 
+    }
 }
+
 img.crew-img{
-    width: 60%;
+    height: 300px;
     margin: 50px auto;
-    border-bottom: 1px solid #4E5057
+    border-bottom: 1px solid #4E5057;
+    @media screen {
+        @media(min-width: 500px){
+            height: 450px;
+        }
+        @media(min-width: 900px){
+            position: absolute;
+            height: 65%;
+            bottom: 0;
+            right: 10%;
+            margin: 0;            
+            border: none;
+        } 
+    }
 }
 
 .crew-menu{
@@ -41,15 +79,59 @@ img.crew-img{
     justify-content: space-around;
     width: 50%;
     margin-bottom: 50px;
+    @media screen {
+        @media(min-width: 500px){
+            width: 40%;;
+        }
+        @media(min-width: 900px){
+            position: absolute;
+            left: 0;
+            width: 50%;
+            bottom: -100%;
+        } 
+    }
     a div{
-        width: 13px;
-        height: 13px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%;
-        background-color: gray;
+        background-color: $font-color3;
+        @media screen {
+            @media(min-width: 500px){
+                width: 20px;
+                height: 20px;
+            }
+            @media(min-width: 900px){
+                width: 15px;
+                height: 15px;
+            } 
+        }
+        &:hover{
+            background-color: $font-color2;
+        }
+    }
+    .selected div{
+        background-color: $font-color1;
     }
 }
 .crew-info{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 80px;
+    gap: 10px;
+    @media screen {
+        @media(min-width: 500px){
+            
+        }
+        @media(min-width: 900px){
+            width: 35%;
+            align-items: start;
+            position: absolute;
+            margin-top: 7%;
+            left: 7%;
+        } 
+    }
+    p{
+        margin-top: 20px;
+    }
 }
